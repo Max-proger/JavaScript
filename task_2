@@ -1,0 +1,11 @@
+'use strict'
+
+var name = 'Василий';
+var admin = name;
+alert(admin);
+
+/*
+var user = { name: 'Василий' };
+var admin = user;
+alert(admin.name);
+*/
