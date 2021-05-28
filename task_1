@@ -1,0 +1,5 @@
+'use strict'
+
+var celsiusTemperature = prompt('Введите показатель температуры в цельсиях');
+var fahrenheitЕemperature = (9 / 5) * celsiusTemperature + 32;
+alert('Температура по Фаренгейту составляет: ' + fahrenheitЕemperature)
