@@ -1,0 +1,35 @@
+function addition(x, y) {
+    return x + y;
+}
+
+function subtraction(x, y) {
+    return x - y;
+}
+
+function composition(x, y) {
+    return x * y;
+}
+
+function segmentation(x, y) {
+    return x / y;
+}
+
+
+let a = parseInt(prompt('Введите 1 число')), operation = prompt('Выберите один из математических операторов +, -, *, /'), b = parseInt(prompt('Введите 2 число'));
+
+
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case '+':
+            return addition(arg1, arg2);
+        case '-':
+            return subtraction(arg1, arg2);
+        case '*':
+            return composition(arg1, arg2);
+        case '/':
+            return segmentation(arg1, arg2);
+
+    }
+}
+
+console.log(mathOperation(a, b, operation))
