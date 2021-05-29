@@ -1,0 +1,8 @@
+function power(val, pow) {
+    if (pow == 1) return val;
+    return val * power(val, --pow)
+}
+
+let a = parseInt(prompt('Введите число')), b = parseInt(prompt('Введите степень'));
+
+console.log(power(a, b))
