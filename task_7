@@ -1,0 +1,16 @@
+function kindaMagic(chekMe, chekWith) {
+    console.log(`${chekMe} === ${chekWith} : ${chekMe === chekWith}\n${chekMe} == ${chekWith} : ${chekMe == chekWith}\n${chekMe} > ${chekWith} : ${chekMe > chekWith}
+${chekMe} < ${chekWith} : ${chekMe < chekWith}\n${chekMe} >= ${chekWith} : ${chekMe >= chekWith}\n${chekMe} <= ${chekWith} : ${chekMe <= chekWith}\n`)
+}
+
+kindaMagic(null, 0)
+kindaMagic(null, 1)
+kindaMagic(null, -1)
+kindaMagic(null, undefined)
+
+/*
+Абстрактный алгоритм реляционного сравнения
+Cведение к числу ToNumber Null = +0 и при сравнение с чисолами мы получаем значение True что null < 1  и что null > -1
+можно предположить что при сравнение приобразует Null в число и сравнивает его.
+в случае с undefined при сравнение == получаем true только из за того что данный оператор сравнивает разные типы объекта как например '2' == 2
+*/

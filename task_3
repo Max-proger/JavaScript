@@ -1,0 +1,8 @@
+let a = parseInt(prompt('Введите 1 число')), b = parseInt(prompt('Введите 2 число'));
+if (a >= 0 && b >= 0) {
+    console.log(`Разность чисел равна: ${a - b}`);
+} else if (a < 0 && b < 0) {
+    console.log(`Произведение чисел равно: ${a * b}`);
+} else {
+    console.log(`Сумма чисел равна: ${a + b}`)
+}
