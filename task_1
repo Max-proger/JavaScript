@@ -1,0 +1,28 @@
+let num = Math.floor(Math.random() * 999);
+let bigNum = 10000;
+let zero = 0;
+
+console.log(`Рандомное число равно: ${num}`)
+
+function numbers(n) {
+    let obj = {} // {units: '0', ten: '0', hundreds: '0'} 
+    let arr = ['units', 'ten', 'hundreds']
+    if (n >= 0 && n < 1000) {
+        n = String(n);
+        for (let i = 0; i < n.length; i++) {
+            obj[arr[i]] = n[n.length - (i + 1)]
+        } return obj
+
+    } else {
+        console.log('Число находиться вне диапазона от 0 до 999')
+    }
+
+}
+
+console.log(numbers(num))
+console.log(numbers(bigNum))
+console.log(numbers(zero))
+
+
+
+
