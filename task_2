@@ -1,0 +1,26 @@
+// Организовать такой массив для хранения товаров в корзине;
+
+
+let basket = [
+    { product: 'phone', price: 100000, count: 1 },
+    { product: 'notebook', price: 150000, count: 2 },
+    { product: 'TV', price: 70000, count: 1 },
+    { product: 'hoover', price: 20000, count: 1 },
+    { product: 'teapot', price: 10000, count: 1 }
+]
+
+
+
+// Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+
+
+let basketValue = 0
+
+function countBasketPrice(arr) {
+    for (i = 0; i < basket.length; i++) {
+        basketValue += basket[i].price * basket[i].count;
+    }
+    return basketValue;
+}
+
+console.log(`Стоимость товаров в корзине составляет: ${countBasketPrice(basket)}`)
