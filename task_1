@@ -1,0 +1,24 @@
+let field = document.createElement('div');
+document.body.appendChild(field);
+
+for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 10; j++) {
+        let css = j ? {} : { clear: 'left' };
+        let content = '';
+        if (i == 0 || i == 9)
+            content = j > 0 && j < 9 ? 'ABCDEFGH'.charAt(j - 1) : null;
+        else if (j == 0 || j == 9)
+            content = 9 - i;
+        else css.background = (j + i) % 2 ? 'white' : 'black';
+        let node = document.createElement('div');
+        css.width = '30px';
+        css.height = '30px';
+        css.textAlign = 'center';
+        css.float = 'left';
+        css.border = '1px solid black'
+        for (let i in css) node.style[i] = css[i];
+        if (content)
+            node.innerHTML = content;
+        field.appendChild(node);
+    }
+}

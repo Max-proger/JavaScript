@@ -1,0 +1,15 @@
+const catalog = document.querySelector('#catalog');
+
+let product = [
+{ productName: 'phone', price: 100000, count: 1 },
+{ productName: 'notebook', price: 150000, count: 2 },
+{ productName: 'TV', price: 70000, count: 1 },
+{ productName: 'hoover', price: 20000, count: 1 },
+{ productName: 'teapot', price: 10000, count: 1 }
+]
+
+for (let i of product) {
+    catalog.insertAdjacentHTML('beforeEnd', `<ul>
+    <li>${i.productName}</li> 
+    </ul>`);
+}
