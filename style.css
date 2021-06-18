@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	display: flex;
+	width: 1140px;
+	margin: 0 auto;
+    justify-content: space-between;
+}
+#catalog{
+	display: flex;
+    border-radius: 10px;
+}
+.prod_item{
+	display: flex;
+	width: 200px;
+	margin: 10px;
+	box-shadow: 0 0 6px 1px rgb(13, 36, 44);
+	justify-content: space-between;
+    text-align: left;
+}
+
+
+.button{
+	width: 30%;
+	background: green;
+	text-align: center;
+	cursor: pointer;
+}
+.button:hover{
+	background: red;
+}
+
+.total{
+	display: flex;
+	justify-content: space-between;
+    box-shadow: 0 0 6px 1px rgb(247, 7, 7);
+}
